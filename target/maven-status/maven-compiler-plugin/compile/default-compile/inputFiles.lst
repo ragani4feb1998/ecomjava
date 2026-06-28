@@ -1,12 +1,12 @@
 /home/ubuntu/ecomjava/src/main/java/com/learn/mycart/entities/Category.java
 /home/ubuntu/ecomjava/src/main/java/com/learn/mycart/entities/User.java
 /home/ubuntu/ecomjava/src/main/java/com/learn/mycart/servlets/LoginServlet.java
-/home/ubuntu/ecomjava/src/main/java/com/learn/mycart/dao/UserDao.java
 /home/ubuntu/ecomjava/src/main/java/com/learn/mycart/dao/CategoryDao.java
+/home/ubuntu/ecomjava/src/main/java/com/learn/mycart/dao/UserDao.java
 /home/ubuntu/ecomjava/src/main/java/com/learn/mycart/servlets/RegisterServlet.java
-/home/ubuntu/ecomjava/src/main/java/com/learn/mycart/helper/Helper.java
-/home/ubuntu/ecomjava/src/main/java/com/learn/mycart/helper/FactoryProvider.java
 /home/ubuntu/ecomjava/src/main/java/com/learn/mycart/servlets/ProductOperationServlet.java
+/home/ubuntu/ecomjava/src/main/java/com/learn/mycart/helper/FactoryProvider.java
+/home/ubuntu/ecomjava/src/main/java/com/learn/mycart/helper/Helper.java
 /home/ubuntu/ecomjava/src/main/java/com/learn/mycart/dao/ProductDao.java
 /home/ubuntu/ecomjava/src/main/java/com/learn/mycart/entities/Product.java
 /home/ubuntu/ecomjava/src/main/java/com/learn/mycart/servlets/LogoutServlet.java
