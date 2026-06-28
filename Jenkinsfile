@@ -32,12 +32,25 @@ pipeline {
                 sh 'ls -lh target'
             }
         }
+	
+	stage('Copy WAR') {
+    	steps {
+        	sh '''
+        	cp target/mycart.war /tmp/mycart.war
+        	'''
+    		}
+	}
+
 
         stage('Deploy') {
             steps {
                 sh '''
-                cp target/*.war ${TOMCAT_DIR}/${WAR_NAME}
-                '''
+        		scp /tmp/mycart.war jenkinsdeploy@YOUR_EC2_PRIVATE_IP:/tmp/mycart.war
+
+        		ssh jenkinsdeploy@172.31.7.216 "
+            		sudo cp /tmp/mycart.war /var/lib/tomcat10/webapps/mycart.war
+        		"
+        		'''
             }
         }
 
