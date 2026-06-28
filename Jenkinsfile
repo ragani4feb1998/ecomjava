@@ -45,7 +45,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh '''
-        		scp /tmp/mycart.war jenkinsdeploy@YOUR_EC2_PRIVATE_IP:/tmp/mycart.war
+        		scp /tmp/mycart.war jenkinsdeploy@172.31.7.216:/tmp/mycart.war
 
         		ssh jenkinsdeploy@172.31.7.216 "
             		sudo cp /tmp/mycart.war /var/lib/tomcat10/webapps/mycart.war
